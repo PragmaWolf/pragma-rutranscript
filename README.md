@@ -1,5 +1,5 @@
-# pragma-rutranscript
-Transcription russians texts using all existing standards:
+# pragma-rutranslit
+Transliteration russians texts using all existing standards:
 - Scientific
 - ISO 9: 1995 (GOST 7.79-2000)
     - table A 
@@ -19,7 +19,7 @@ Transcription russians texts using all existing standards:
 
 ## Used and tested on ##
 
-- NodeJS 7+ [Documentation](https://nodejs.org/dist/latest/docs/api/)
+- NodeJS 7+ ([Documentation](https://nodejs.org/dist/latest/docs/api/))
 
 ## Install ##
 
