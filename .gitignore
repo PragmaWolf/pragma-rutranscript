@@ -1,0 +1,7 @@
+.idea
+logs/*.*
+node_modules
+*_dev*
+*.development.*
+*_development*
+*.todo
