@@ -1,6 +1,6 @@
 {
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "ecmaFeatures": {
       "impliedStrict": true
     }
@@ -25,16 +25,23 @@
         "properties": "always"
       }
     ],
-    "comma-dangle": ["error", {
-      "arrays": "ignore",
-      "objects": "ignore",
-      "imports": "ignore",
-      "exports": "ignore",
-      "functions": "ignore"
-    }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
     "curly": [
       "error",
       "all"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
     ],
     "generator-star-spacing": [
       "error",
@@ -56,6 +63,10 @@
         "mode": "minimum"
       }
     ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "max-len": [
       "error",
       120,
@@ -71,6 +82,9 @@
       {
         "properties": false
       }
+    ],
+    "no-else-return": [
+      "error"
     ],
     "no-extra-boolean-cast": [
       "off"
@@ -95,11 +109,17 @@
         "skipBlankLines": true
       }
     ],
+    "no-undefined": [
+      "error"
+    ],
     "no-unused-vars": [
       "error",
       {
         "args": "none"
       }
+    ],
+    "no-useless-return": [
+      "error"
     ],
     "no-var": [
       "warn"
@@ -121,7 +141,8 @@
         "require": {
           "FunctionDeclaration": true,
           "MethodDefinition": true,
-          "ClassDeclaration": true
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false
         }
       }
     ],
@@ -134,7 +155,6 @@
       {
         "requireReturn": false
       }
-    ],
-    "linebreak-style": ["off"]
+    ]
   }
 }
